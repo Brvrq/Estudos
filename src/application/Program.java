@@ -22,6 +22,21 @@ public class Program {
 		
 		System.out.println(product);
 		
+		System.out.println();
+		System.out.print("Enter the number of products to be add to stock: ");
+		int quantity = sc.nextInt();
+		product.addProducts(quantity);
+		
+		System.out.println();
+		System.out.print("Updated data: " + product);
+
+		System.out.println();
+		System.out.print("Enter the number of products to be removed to stock: ");
+		quantity = sc.nextInt();
+		product.removeProducts(quantity);
+
+		System.out.println();
+		System.out.print("Updated data: " + product);
 		
 		sc.close();
 		
